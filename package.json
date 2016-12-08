@@ -1,0 +1,26 @@
+{
+  "name": "react-flextable",
+  "version": "1.0.0",
+  "description": "A flexible, responsive, tabular data display component based on CSS Flexbox. This small set of components provides a simple interface that allows developers to generate flexible table-like data components manually, or via a custom data object to enable sortable data display.",
+  "main": "FlexTable.jsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willdavidow/react-flextable.git"
+  },
+  "keywords": [
+    "React",
+    "Component",
+    "FlexBox",
+    "Responsive",
+    "FlexTable"
+  ],
+  "author": "Will Davidow <w.davidow@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/willdavidow/react-flextable/issues"
+  },
+  "homepage": "https://github.com/willdavidow/react-flextable#readme"
+}
