@@ -22,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/willdavidow/react-flextable/issues"
   },
-  "homepage": "https://github.com/willdavidow/react-flextable#readme"
+  "homepage": "https://github.com/willdavidow/react-flextable#readme",
+  "devDependencies": {
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "react": "^15.4.1"
+  }
 }
