@@ -22,43 +22,43 @@ Here's a simple two-column data table as an example:
     </FlexTableCell>
     
     <FlexTableCell className="data-display__cell data-display__cell--header" data-col-name="name">
-      <FlexTableContent>Name</FlexTableContent>
+      <FlexTableContent className="data-display__content-header">Name</FlexTableContent>
     </FlexTableCell>
     
   </FlexTableRow>
   
   <FlexTableRow className="data-display__row">
   
-    <FlexTableCell className="data-display__cell data-display__cell" data-col-name="id">
-      <FlexTableContent>1</FlexTableContent>
+    <FlexTableCell className="data-display__cell" data-col-name="id">
+      <FlexTableContent className="data-display__content">1</FlexTableContent>
     </FlexTableCell>
     
-    <FlexTableCell className="data-display__cell data-display__cell" data-col-name="name">
-      <FlexTableContent>Jonathan</FlexTableContent>
-    </FlexTableCell>
-    
-  </FlexTableRow>
-  
-  <FlexTableRow className="data-display__row">
-  
-    <FlexTableCell className="data-display__cell data-display__cell" data-col-name="id">
-      <FlexTableContent>2</FlexTableContent>
-    </FlexTableCell>
-    
-    <FlexTableCell className="data-display__cell data-display__cell" data-col-name="name">
-      <FlexTableContent>Will</FlexTableContent>
+    <FlexTableCell className="data-display__cell" data-col-name="name">
+      <FlexTableContent className="data-display__content">Jonathan</FlexTableContent>
     </FlexTableCell>
     
   </FlexTableRow>
   
   <FlexTableRow className="data-display__row">
   
-    <FlexTableCell className="data-display__cell data-display__cell" data-col-name="id">
-      <FlexTableContent>3</FlexTableContent>
+    <FlexTableCell className="data-display__cell" data-col-name="id">
+      <FlexTableContent className="data-display__content">2</FlexTableContent>
     </FlexTableCell>
     
-    <FlexTableCell className="data-display__cell data-display__cell" data-col-name="name">
-      <FlexTableContent>Archie</FlexTableContent>
+    <FlexTableCell className="data-display__cell" data-col-name="name">
+      <FlexTableContent className="data-display__content">Will</FlexTableContent>
+    </FlexTableCell>
+    
+  </FlexTableRow>
+  
+  <FlexTableRow className="data-display__row">
+  
+    <FlexTableCell className="data-display__cell" data-col-name="id">
+      <FlexTableContent className="data-display__content">3</FlexTableContent>
+    </FlexTableCell>
+    
+    <FlexTableCell className="data-display__cell" data-col-name="name">
+      <FlexTableContent className="data-display__content">Archie</FlexTableContent>
     </FlexTableCell>
     
   </FlexTableRow>
