@@ -6,11 +6,11 @@ A small set of React JS components for creating flexible, responsive, data-drive
 
 Take one of the following two approaches when using these components:
 
-### Manual FlexTable Creation
+## Manual FlexTable Creation
 
 Very similar to writing out standard HTML for a basic table..
 
-Here's a simple two-column data table as an example:
+### Example Manual FlexTable:
 
 ```
 <FlexTable className="data-display">
@@ -65,7 +65,7 @@ Here's a simple two-column data table as an example:
 </FlexTable>
 ```
 
-### Data-driven FlexTable Creation
+## Data-driven FlexTable Creation
 
 Injecting data into FlexTable is where it really shines. When using data to define your FlexTable's content, you have the ability to:
 
@@ -83,9 +83,9 @@ The following relatively-simple data structure illustrates what can be done usin
     columns: {
         content: [ // header row
             { // header column
-                sortable: true, // optional, is the column sortable?
                 value: 'place-name', // required
-                render: 'Place Name' // optional, if you want to display complex output in the header cells or just display something different name vs the value
+                render: 'Place Name', // optional, if you want to display complex output in the header cells or just display something different name vs the value
+                sortable: true // optional, is the column sortable?
             }
             // more header columns
         ]
@@ -104,4 +104,58 @@ The following relatively-simple data structure illustrates what can be done usin
         ]
     }
 }
+```
+
+### Example Data-driven FlexTable
+
+```
+const flexTableData = {
+  columns: {
+    content: [
+      {
+        value: 'id',
+        render: 'Person ID',
+        sortable: true
+      },
+      {
+        value: 'name',
+        render: 'Person Name',
+        sortable: true
+      }
+    ]
+  },
+  rows: {
+    className: 'content-row-class',
+    noDataMessage: 'Some message to display if there is no data.',
+    content: [
+      [
+        {
+          value: '1'
+        },
+        {
+          value: 'Jonathan'
+        }
+      ],
+      [
+        {
+          value: '2'
+        },
+        {
+          value: 'Will'
+        }
+      ],
+      [
+        {
+          value: '3'
+        },
+        {
+          value: 'Archie'
+        }
+      ],
+    ]
+  }
+};
+
+<FlexTable 
+  data={flexTableData} />  
 ```
