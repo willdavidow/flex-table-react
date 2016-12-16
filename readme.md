@@ -27,7 +27,7 @@ Here's a simple two-column data table as an example:
     
   </FlexTableRow>
   
-  <FlexTableRow className="data-display__row data-display__row">
+  <FlexTableRow className="data-display__row">
   
     <FlexTableCell className="data-display__cell data-display__cell" data-col-name="id">
       <FlexTableContent>1</FlexTableContent>
@@ -39,7 +39,7 @@ Here's a simple two-column data table as an example:
     
   </FlexTableRow>
   
-  <FlexTableRow className="data-display__row data-display__row">
+  <FlexTableRow className="data-display__row">
   
     <FlexTableCell className="data-display__cell data-display__cell" data-col-name="id">
       <FlexTableContent>2</FlexTableContent>
@@ -51,7 +51,7 @@ Here's a simple two-column data table as an example:
     
   </FlexTableRow>
   
-  <FlexTableRow className="data-display__row data-display__row">
+  <FlexTableRow className="data-display__row">
   
     <FlexTableCell className="data-display__cell data-display__cell" data-col-name="id">
       <FlexTableContent>3</FlexTableContent>
