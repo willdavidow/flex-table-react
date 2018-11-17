@@ -2,21 +2,22 @@
 
 ***Still WIP/Beta - no demo, tests
 
-A small set of React JS components for creating flexible, responsive, data-driven table-like data displays.
+A small React component for creating flexible, responsive, data-driven table-like data displays.
 
-I wrote this library a few years ago and will be working through updating it to use more modern React
-workflows (render props, and support for hooks) very soon.
+This component is pretty stable and works great. With that being said: 
+
+I wrote this library a few years ago and will be looking at ways to refine the code to be even more efficient and use less space.
 
 ## FlexTable Creation
 
-Injecting data into FlexTable is relatively easy. When using data to define your FlexTable's content, you have the ability to:
+Injecting data into FlexTable is relatively easy. When using a data object to define your FlexTable's content, you have the ability to:
 
 - Define as many columns as you want
 - Define whether or not they are sortable
 - Apply a value (for sorting and styling purposes)
 - Apply a value for rendering - if you want to display something different than the value being used for sorting/styling, then you can use the render key in both the header columns and all data rows.
 
-The following relatively-simple data structure illustrates what can be done using a data-driven FlexTable.
+The following relatively-simple data structure illustrates how to use FlexTable.
 
 ### Data Structure
 

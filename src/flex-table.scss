@@ -22,22 +22,26 @@ $flex-sorted-color: #FF0000 !default;
         justify-content: center;
         padding: 0 $flex-cell-padding;
 
+        &--header {
+            cursor: pointer;
+        }
+
         &--no-pad {
             padding: 0;
         }
         
-        &--sort {
-            &:after {
-                // css triangles
-            }
-            
-            &-asc,
-            &-desc {
-                &:after {
-                    // apply sort highlight color
-                }
-            }
-        }
+        // &--sort {
+        //     &::after {
+        //         // css triangles
+        //     }
+        //     
+        //     &-asc,
+        //     &-desc {
+        //         &::after {
+        //             // apply sort highlight color
+        //         }
+        //     }
+        // }
     }
 
     &__content {

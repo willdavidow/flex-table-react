@@ -103,21 +103,21 @@ class FlexTableCell extends PureComponent {
 
 }
 
-FlexTableCell.propTypes = {
-    children: PropTypes.oneOfType([
-        PropTypes.array,
-        PropTypes.object,
-        PropTypes.string,
-    ]),
-    className: PropTypes.oneOfType([
-        PropTypes.object,
-        PropTypes.string,
-    ]),
-    colName: PropTypes.string,
-    data: PropTypes.object,
-    handleSort: PropTypes.func,
-    isHeaderRow: PropTypes.bool,
-    sortable: PropTypes.bool,
-};
+// FlexTableCell.propTypes = {
+//     children: PropTypes.oneOfType([
+//         PropTypes.array,
+//         PropTypes.object,
+//         PropTypes.string,
+//     ]),
+//     className: PropTypes.oneOfType([
+//         PropTypes.object,
+//         PropTypes.string,
+//     ]),
+//     colName: PropTypes.string,
+//     data: PropTypes.object,
+//     handleSort: PropTypes.func,
+//     isHeaderRow: PropTypes.bool,
+//     sortable: PropTypes.bool,
+// };
 
 export default FlexTableCell;

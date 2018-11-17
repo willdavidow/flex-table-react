@@ -27,12 +27,18 @@ class FlexTableRow extends PureComponent {
 
         switch (isHeaderRow) {
 
-            case true:
+            case true: {
+
                 rowData = data.columns.content;
                 break;
 
-            default:
+            }
+
+            default: {
+
                 rowData = data;
+
+            }
         
         }
 
