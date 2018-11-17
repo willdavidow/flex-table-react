@@ -10,7 +10,6 @@
         "lint:js": "eslint .",
         "lint:js-fix": "eslint . --fix",
         "lint:styles": "stylelint .",
-        "test": "echo \"Error: no test specified\" && exit 1",
         "start": "webpack --mode development --watch",
         "build": "webpack -p --mode production",
         "prepublish": "rm -rf ./build && npm run build"
