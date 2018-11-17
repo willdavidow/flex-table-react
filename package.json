@@ -1,6 +1,6 @@
 {
     "name": "flex-table-react",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "A flexible, responsive, tabular data display component based on CSS Flexbox. This small set of components provides a simple interface that allows developers to generate flexible table-like data components manually, or via a custom data object to enable sortable data display.",
     "main": "build/flex-table.js",
     "files": [
