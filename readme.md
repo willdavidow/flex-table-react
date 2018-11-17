@@ -1,6 +1,6 @@
 # FlexTable
 
-***Still WIP/Beta - no demo, tests or build/dist folder yet!***
+***Still WIP/Beta - no demo, tests
 
 A small set of React JS components for creating flexible, responsive, data-driven table-like data displays.
 
@@ -11,6 +11,8 @@ Take one of the following two approaches when using these components:
 Very similar to writing out standard HTML for a basic table..
 
 ### Example Manual FlexTable:
+
+(this way doesn't work at the momemt; only data object (below))
 
 ```
 <FlexTable className="data-display">
