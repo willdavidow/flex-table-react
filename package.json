@@ -1,32 +1,58 @@
 {
-  "name": "react-flextable",
-  "version": "1.0.0",
-  "description": "A flexible, responsive, tabular data display component based on CSS Flexbox. This small set of components provides a simple interface that allows developers to generate flexible table-like data components manually, or via a custom data object to enable sortable data display.",
-  "main": "FlexTable.jsx",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/willdavidow/react-flextable.git"
-  },
-  "keywords": [
-    "React",
-    "Component",
-    "FlexBox",
-    "Responsive",
-    "FlexTable"
-  ],
-  "author": "Will Davidow <w.davidow@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/willdavidow/react-flextable/issues"
-  },
-  "homepage": "https://github.com/willdavidow/react-flextable#readme",
-  "devDependencies": {
-  },
-  "dependencies": {
-    "classnames": "^2.2.5",
-    "react": "^15.4.1"
-  }
+    "name": "flex-table-react",
+    "version": "0.0.1",
+    "description": "A flexible, responsive, tabular data display component based on CSS Flexbox. This small set of components provides a simple interface that allows developers to generate flexible table-like data components manually, or via a custom data object to enable sortable data display.",
+    "main": "build/flex-table.js",
+    "files": [
+        "build/flex-table.js"
+    ],
+    "scripts": {
+        "lint:js": "eslint .",
+        "lint:js-fix": "eslint . --fix",
+        "lint:styles": "stylelint .",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "webpack --mode development --watch",
+        "build": "webpack -p --mode production"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/willdavidow/flex-table-react.git"
+    },
+    "keywords": [
+        "React",
+        "Component",
+        "FlexBox",
+        "Responsive",
+        "FlexTable"
+    ],
+    "author": "Will Davidow <w.davidow@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/willdavidow/flex-table-react/issues"
+    },
+    "homepage": "https://github.com/willdavidow/flex-table-react#readme",
+    "devDependencies": {
+        "@babel/core": "^7.1.6",
+        "@babel/preset-env": "^7.1.6",
+        "@babel/preset-react": "^7.0.0",
+        "babel-eslint": "^10.0.1",
+        "babel-loader": "^8.0.4",
+        "babel-plugin-transform-object-rest-spread": "^6.26.0",
+        "css-loader": "^1.0.1",
+        "eslint": "^5.9.0",
+        "eslint-plugin-import": "^2.14.0",
+        "eslint-plugin-react": "^7.11.1",
+        "eslint-plugin-react-hooks": "0.0.0",
+        "node-sass": "^4.10.0",
+        "sass-loader": "^7.1.0",
+        "style-loader": "^0.23.1",
+        "stylelint": "^9.8.0",
+        "webpack": "^4.25.1",
+        "webpack-cli": "^3.1.2"
+    },
+    "dependencies": {
+        "classnames": "^2.2.5",
+        "react": "^16.7.0-alpha.2",
+        "prop-types": "^15.5.7-alpha.1"
+    }
 }

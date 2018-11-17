@@ -1,6 +1,6 @@
 // Natural Sort, Credit: https://github.com/Bill4Time/javascript-natural-sort
 /* eslint-disable */
-export function naturalSort (a, b) {
+export default function naturalSort (a, b) {
 	"use strict";
     var re = /(^([+\-]?(?:0|[1-9]\d*)(?:\.\d*)?(?:[eE][+\-]?\d+)?)?$|^0x[0-9a-f]+$|\d+)/gi;
     var sre = /(^[ ]*|[ ]*$)/g;
