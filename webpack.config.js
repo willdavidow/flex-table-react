@@ -1,4 +1,5 @@
-var path = require('path');
+const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
     entry: './src/index.js',
@@ -7,7 +8,11 @@ module.exports = {
         filename: 'flex-table.js',
         libraryTarget: 'umd',  
     },
-    // devtool: "inline-source-map",
+    externals: {
+        // Use external version of React
+        react: 'umd react',
+    },
+    // devtool: 'inline-source-map',
     module: {
         rules: [
             {
@@ -19,13 +24,13 @@ module.exports = {
                 test: /\.scss$/,
                 use: [
                     {
-                        loader: "style-loader", // creates style nodes from JS strings
+                        loader: 'style-loader', // creates style nodes from JS strings
                     },
                     {
-                        loader: "css-loader", // translates CSS into CommonJS
+                        loader: 'css-loader', // translates CSS into CommonJS
                     },
                     {
-                        loader: "sass-loader", // compiles Sass to CSS
+                        loader: 'sass-loader', // compiles Sass to CSS
                     },
                 ],
             },

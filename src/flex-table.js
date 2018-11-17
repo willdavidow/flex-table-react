@@ -35,7 +35,7 @@ class FlexTable extends PureComponent {
             sortColumn, sortDirection, 
         } = this.state;
 
-        if ((this.state.rows !== nextProps.data.rows.content)) {
+        if (this.state.rows !== nextProps.data.rows.content) {
 
             this.setState({
                 rows: nextProps.data.rows.content.filter((row) => {
@@ -67,7 +67,9 @@ class FlexTable extends PureComponent {
     handleSort(sortBy, sortDir) {
 
         const {
-            rows, sortColumn, sortDirection, 
+            rows,
+            sortColumn,
+            sortDirection, 
         } = this.state;
         let updatedState = {
             rows: rows.sort((a, b) => {
@@ -88,7 +90,7 @@ class FlexTable extends PureComponent {
 
         } else {
 
-            updatedState.sortDirection = sortDirection === SortDirection.DIR_ASC ? SortDirection.DIR_DESC : SortDirection.DIR_ASC;
+            updatedState.sortDirection = (sortDirection === SortDirection.DIR_ASC) ? SortDirection.DIR_DESC : SortDirection.DIR_ASC;
 
         }
 
@@ -188,16 +190,16 @@ class FlexTable extends PureComponent {
 
 }
 
-FlexTable.propTypes = {
-    children: PropTypes.oneOfType([
-        PropTypes.arrayOf(PropTypes.node),
-        PropTypes.node,
-    ]).isRequired,
-    className: PropTypes.oneOfType([
-        PropTypes.object,
-        PropTypes.string,
-    ]),
-    data: PropTypes.object,
-};
-
+// FlexTable.propTypes = {
+//     children: PropTypes.oneOfType([
+//         PropTypes.arrayOf(PropTypes.node),
+//         PropTypes.node,
+//     ]).isRequired,
+//     className: PropTypes.oneOfType([
+//         PropTypes.object,
+//         PropTypes.string,
+//     ]),
+//     data: PropTypes.object,
+// };
+//
 export default FlexTable;

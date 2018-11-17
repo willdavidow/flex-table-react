@@ -16,17 +16,17 @@ const FlexTableContent = ({
     </div>
 );
 
-FlexTableContent.propTypes = {
-    children: PropTypes.oneOfType([
-        PropTypes.array,
-        PropTypes.object,
-        PropTypes.string,
-    ]),
-    className: PropTypes.oneOfType([
-        PropTypes.object,
-        PropTypes.string,
-    ]),
-    isHeaderRow: PropTypes.bool,
-};
+// FlexTableContent.propTypes = {
+//     children: PropTypes.oneOfType([
+//         PropTypes.array,
+//         PropTypes.object,
+//         PropTypes.string,
+//     ]),
+//     className: PropTypes.oneOfType([
+//         PropTypes.object,
+//         PropTypes.string,
+//     ]),
+//     isHeaderRow: PropTypes.bool,
+// };
 
 export default FlexTableContent;
