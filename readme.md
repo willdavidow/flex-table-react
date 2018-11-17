@@ -4,72 +4,12 @@
 
 A small set of React JS components for creating flexible, responsive, data-driven table-like data displays.
 
-Take one of the following two approaches when using these components:
+I wrote this library a few years ago and will be working through updating it to use more modern React
+workflows (render props, and support for hooks) very soon.
 
-## Manual FlexTable Creation
+## FlexTable Creation
 
-Very similar to writing out standard HTML for a basic table..
-
-### Example Manual FlexTable:
-
-(this way doesn't work at the momemt; only data object (below))
-
-```
-<FlexTable className="data-display">
-
-  <FlexTableRow className="data-display__row data-display__row-header">
-  
-    <FlexTableCell className="data-display__cell data-display__cell--header" data-col-name="id">
-      <FlexTableContent>Id</FlexTableContent>
-    </FlexTableCell>
-    
-    <FlexTableCell className="data-display__cell data-display__cell--header" data-col-name="name">
-      <FlexTableContent className="data-display__content-header">Name</FlexTableContent>
-    </FlexTableCell>
-    
-  </FlexTableRow>
-  
-  <FlexTableRow className="data-display__row">
-  
-    <FlexTableCell className="data-display__cell" data-col-name="id">
-      <FlexTableContent className="data-display__content">1</FlexTableContent>
-    </FlexTableCell>
-    
-    <FlexTableCell className="data-display__cell" data-col-name="name">
-      <FlexTableContent className="data-display__content">Jonathan</FlexTableContent>
-    </FlexTableCell>
-    
-  </FlexTableRow>
-  
-  <FlexTableRow className="data-display__row">
-  
-    <FlexTableCell className="data-display__cell" data-col-name="id">
-      <FlexTableContent className="data-display__content">2</FlexTableContent>
-    </FlexTableCell>
-    
-    <FlexTableCell className="data-display__cell" data-col-name="name">
-      <FlexTableContent className="data-display__content">Will</FlexTableContent>
-    </FlexTableCell>
-    
-  </FlexTableRow>
-  
-  <FlexTableRow className="data-display__row">
-  
-    <FlexTableCell className="data-display__cell" data-col-name="id">
-      <FlexTableContent className="data-display__content">3</FlexTableContent>
-    </FlexTableCell>
-    
-    <FlexTableCell className="data-display__cell" data-col-name="name">
-      <FlexTableContent className="data-display__content">Archie</FlexTableContent>
-    </FlexTableCell>
-    
-  </FlexTableRow>
-</FlexTable>
-```
-
-## Data-driven FlexTable Creation
-
-Injecting data into FlexTable is where it really shines. When using data to define your FlexTable's content, you have the ability to:
+Injecting data into FlexTable is relatively easy. When using data to define your FlexTable's content, you have the ability to:
 
 - Define as many columns as you want
 - Define whether or not they are sortable
